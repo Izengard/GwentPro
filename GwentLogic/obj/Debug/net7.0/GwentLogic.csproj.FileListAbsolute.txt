@@ -1,0 +1,12 @@
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\bin\Debug\net7.0\GwentLogic.deps.json
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\bin\Debug\net7.0\GwentLogic.dll
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\bin\Debug\net7.0\GwentLogic.pdb
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\GwentLogic.csproj.AssemblyReference.cache
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\GwentLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\GwentLogic.AssemblyInfoInputs.cache
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\GwentLogic.AssemblyInfo.cs
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\GwentLogic.csproj.CoreCompileInputs.cache
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\GwentLogic.dll
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\refint\GwentLogic.dll
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\GwentLogic.pdb
+C:\Users\JL\Desktop\Project Gwent\GwentPro\GwentLogic\obj\Debug\net7.0\ref\GwentLogic.dll
