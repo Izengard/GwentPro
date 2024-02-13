@@ -1,11 +1,8 @@
 namespace GwentLogic;
 
-public class Hero : FieldCard
+public class Hero : UnitCard
 {
     public Hero(string name, string description, string faction, string skill, int power) :
-        base(name, description, faction, skill)
-    {
-        this.Power = power;
-    }
-    public int Power {get; set}
+        base(name, description, faction, skill,power){}
+  
 }
