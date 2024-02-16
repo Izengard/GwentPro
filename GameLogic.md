@@ -2,9 +2,9 @@
 
 ## NonTerminals
 
-Game: StartGame - Round - Round - Round? - EndGame
+Game: StartGame - Round - Round - Round* - EndGame
     StartGame: SET LEADERS - SET DECKS  - SetHands
-    SetHands: INITIAL_DRAW - SWAP_TWO_CARDS
+        SetHands: INITIAL_DRAW - SWAP_TWO_CARDS
     EndGame: 
 Round:  ROUND_DRAW - p1Turn - p2Turn - ((p1Turn)* - (p2Turn)*)* - EndRound
     EndRound:  DETERMINE_WINNER - DESTROY_FIELD_CARDS
