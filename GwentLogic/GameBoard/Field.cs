@@ -14,7 +14,7 @@ public class Field
     public Row MeleeRow { get; set; }
     public Row RangedRow { get; set; }
     public Row SiegeRow { get; set; }
-    
+    public int TotalPower {get; set;}
 
 
 }

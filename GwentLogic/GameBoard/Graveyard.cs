@@ -3,9 +3,9 @@ namespace GwentLogic;
 
 public class Graveyard
 {
-    public Graveyard(ICollection<FieldCard> cards)
+    public Graveyard(ICollection<DeckCard> cards)
     {
         this.GraveyardCards = cards;
     }
-    public ICollection<FieldCard> GraveyardCards {get; set;}
+    public ICollection<DeckCard> GraveyardCards {get; set;}
 }

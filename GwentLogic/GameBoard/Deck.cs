@@ -1,11 +1,10 @@
 namespace GwentLogic;
 
-
 public class Deck
 {
-    public Deck(IList<FieldCard> cards)
+    public Deck(IList<DeckCard> cards)
     {
-        this.DeckCards = cards;
+        this.cards = cards;
     }
-    public IList<FieldCard> DeckCards {get; set;}
+    public IList<DeckCard> cards {get; set;}
 }

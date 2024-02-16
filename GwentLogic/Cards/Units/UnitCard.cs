@@ -1,6 +1,6 @@
 namespace GwentLogic;
 
-public abstract class UnitCard : FieldCard
+public abstract class UnitCard : DeckCard
 {
     public UnitCard(string name, string description, string faction, Skill skill, int power, AttackType type) :
         base(name, description, faction, skill)
