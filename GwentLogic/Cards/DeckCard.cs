@@ -1,4 +1,4 @@
-namespace GwentLogic;
+namespace GwentLogic.Cards;
 
 public abstract class DeckCard : Card
 {
@@ -7,6 +7,11 @@ public abstract class DeckCard : Card
 
     public void Destroy(){}
     public void ReturnToHand(){}
-
-    
+ 
+}
+public enum AttackType
+{
+    Melee,
+    Ranged,
+    Siege
 }

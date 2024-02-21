@@ -1,20 +1,13 @@
-namespace GwentLogic;
+namespace GwentLogic.Cards;
 
 public abstract class UnitCard : DeckCard
 {
     public UnitCard(string name, string description, string faction, Skill skill, int power, AttackType type) :
         base(name, description, faction, skill)
     {
-        this.Power = power;
+        this._power = power;
 
     }
-
-    public int Power {get; set;}
+    public int Power{get;}
     public AttackType Type {get;}
-}
-public enum AttackType
-{
-    Melee,
-    Ranged,
-    Siege
 }

@@ -1,4 +1,4 @@
-namespace GwentLogic;
+namespace GwentLogic.Cards;
 
 public class Hero : UnitCard
 {

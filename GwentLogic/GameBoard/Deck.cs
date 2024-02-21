@@ -1,10 +1,18 @@
+using System;
 namespace GwentLogic;
 
-public class Deck
+public class Deck : ICloneable
 {
     public Deck(IList<DeckCard> cards)
     {
-        this.cards = cards;
+        this.Cards = cards;
     }
-    public IList<DeckCard> cards {get; set;}
+        
+    public IList<DeckCard> Cards {get;}
+
+    public object Clone()
+    {
+        var clone = new Deck(this.Cards);
+        return clone;
+    }
 }

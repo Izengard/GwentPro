@@ -1,12 +1,8 @@
-namespace GwentLogic;
+namespace GwentLogic.Cards;
 
 public abstract class Buff : SpecialCard
 {
-    public Buff (string name, string description, string faction, Skill skill,AttackType type) :
-    base(name, description, faction, skill){
-        this.Type = type;
-    }
+    public Buff (string name, string description, string faction, Skill skill) :
+    base(name, description, faction, skill){}
 
-
-    AttackType Type {get; set;}
 }   

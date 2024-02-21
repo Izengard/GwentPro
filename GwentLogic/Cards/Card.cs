@@ -1,10 +1,10 @@
-﻿namespace GwentLogic;
+﻿namespace GwentLogic.Cards;
 public abstract class Card
 {
-    public string Name {get; set;}
-    public string Description {get; set;}
-    public string Faction {get; set;}
-    public Skill Skill{get; set;}
+    public string Name { get; }
+    public string Description { get; }
+    public string Faction { get; }
+    public Skill Skill { get; }
 
     public Card(string name, string description, string faction, Skill skill)
     {
@@ -13,5 +13,5 @@ public abstract class Card
         this.Faction = faction;
         this.Skill = skill;
     }
-    
-}  
+
+}
