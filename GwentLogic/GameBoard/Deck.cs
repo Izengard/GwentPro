@@ -1,18 +1,26 @@
 using System;
-namespace GwentLogic;
+using GwentLogic.Cards;
 
-public class Deck : ICloneable
+namespace GwentLogic.GameBoard;
+
+public class Deck
 {
+    DeckCard[] _cards;
+    public int Count{get; private set;}
+
     public Deck(IList<DeckCard> cards)
     {
-        this.Cards = cards;
+        if(cards.Count > 30)
+            throw new Exception("Deck may only contains 30 cards");
+        this._cards = cards.ToArray<DeckCard>();
+        this.Count = 30;
     }
-        
-    public IList<DeckCard> Cards {get;}
-
-    public object Clone()
+    public DeckCard Draw()
     {
-        var clone = new Deck(this.Cards);
-        return clone;
+        if(Count == 0) 
+            throw new Exception("Deck is already empty");
+        return _cards[Count--];
     }
+
+    
 }

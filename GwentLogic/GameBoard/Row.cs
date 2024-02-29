@@ -1,35 +1,44 @@
+using GwentLogic.Cards;
 namespace GwentLogic;
 
 public class Row
 {
     // Constructor
+    UnitCard[] cards = new UnitCard[10];
+    public int UnitsCount { get; private set; }
     public Row(AttackType type)
     {
         this.Type = type;
     }
 
-    //Atributes
-    AttackType Type { get; set; }
-    public ICollection<UnitCard> Units { get; set; }
-    public Buff Buff { get; set; }
-    public bool ActiveWeather { get; set; }
+    AttackType Type { get; }
+    public Buff Buff { get; private set; }
     public int PowerSubtotal
     {
         get
         {
             var subtotal = 0;
-            foreach (var unit in Units)
-                subtotal += unit.Power;
+            for (int i = 0; i < UnitsCount; i++)
+                subtotal += cards[i].Power;
+
             return subtotal;
         }
     }
 
-    // Methods
-    public void DestroyRow()
+    public void Summon(UnitCard unit)
     {
-        foreach (var unit in Units)
-            unit.Destroy();
+        this.cards[UnitsCount++] = unit;
     }
+    public void SetBuff(Buff buff)
+    {
+        this.Buff = buff;
+        for (int i = 0; i < UnitsCount; i++)
+            if (cards[i] is Unit) 
+}
+
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-namespace GwentLogic;
+namespace GwentLogic.GameBoard;
 
 public class GameBoard
 {

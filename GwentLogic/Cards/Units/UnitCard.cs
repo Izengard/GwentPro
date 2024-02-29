@@ -2,12 +2,19 @@ namespace GwentLogic.Cards;
 
 public abstract class UnitCard : DeckCard
 {
-    public UnitCard(string name, string description, string faction, Skill skill, int power, AttackType type) :
-        base(name, description, faction, skill)
+    public UnitCard(string name, string description, string faction,AttackType[] types, int power) :
+        base(name, description, faction)
     {
-        this._power = power;
-
+        this.Power = power;
+        this.AttackTypes = types;
     }
-    public int Power{get;}
-    public AttackType Type {get;}
+    public virtual int Power { get; }
+    public AttackType[] AttackTypes { get; }
+}
+
+public enum AttackType
+{
+    Melee,
+    Ranged,
+    Siege
 }

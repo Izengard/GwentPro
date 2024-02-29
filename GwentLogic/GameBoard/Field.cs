@@ -1,4 +1,6 @@
-namespace GwentLogic;
+using GwentLogic.Cards;
+
+namespace GwentLogic.GameBoard;
 
 
 public class Field

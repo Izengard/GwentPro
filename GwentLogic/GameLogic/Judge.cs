@@ -7,6 +7,7 @@ namespace GwentLogic;
 //
 public class Judge
 {
+    Row[] rows;
     public Judge()
     {
         this.Validator = new Validator();
@@ -16,7 +17,6 @@ public class Judge
 
     public Validator Validator { get; set; }
     public Executioner Executioner { get; set; }
-
 }
 
 
