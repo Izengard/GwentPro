@@ -1,0 +1,2 @@
+A deck is a collection of DeckCards, this is, non-Leaders cards. Lets use an array to represent our deck.An array of 
+Lenght 30 was used so or the deck capacity is restricted to 30 cards maximun 

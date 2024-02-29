@@ -1,0 +1,3 @@
+Effects
+What is a card effect? In general a card effect is an action produced in the game,which may modify the battlefield, its cards or even the players hands.
+So, an effect may be modelated as a C# Action<> delegate.

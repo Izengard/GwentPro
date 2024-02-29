@@ -1,17 +1,18 @@
-namespace GwentLogic.Cards;
+using GwentLogic.Cards.Skill;
+
+namespace GwentLogic.Cards.Units;
 
 public class Unit : UnitCard
 {
     private int powerModifier = 0;
-    public Unit(string name, string description, string faction,  int power, AttackType[] atkTypes) :
-        base(name, description, faction, power,type){}
-
-    public int Power {get => Power * powerModifier;}
+    public Unit(string name, string description, string faction, AttackType[] types, int power, UnitSkill skill) :
+        base(name, description, faction, types, power, skill) {}
+    public int Power { get => Power * powerModifier; }
     public void SetPowerModifier(int modifier)
     {
         powerModifier = modifier;
     }
 
-    
+
 
 }
